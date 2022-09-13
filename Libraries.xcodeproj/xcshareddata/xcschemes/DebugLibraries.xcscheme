@@ -11,7 +11,7 @@
             buildForRunning = "YES"
             buildForProfiling = "NO"
             buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
+            buildForAnalyzing = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "C7E63A6B28D0E84900E42096"
@@ -25,12 +25,26 @@
             buildForRunning = "YES"
             buildForProfiling = "NO"
             buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
+            buildForAnalyzing = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "C7E639B228CCCDE300E42096"
                BuildableName = "libLua.a"
                BlueprintName = "Lua"
+               ReferencedContainer = "container:Libraries.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "NO"
+            buildForRunning = "YES"
+            buildForProfiling = "NO"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "C7E63AB228D0F3B700E42096"
+               BuildableName = "libpicojson.a"
+               BlueprintName = "picojson"
                ReferencedContainer = "container:Libraries.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

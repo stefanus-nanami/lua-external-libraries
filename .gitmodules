@@ -1,3 +1,6 @@
 [submodule "LuaBridge3"]
 	path = LuaBridge3
 	url = https://github.com/kunitoki/LuaBridge3.git
+[submodule "picojson"]
+	path = picojson
+	url = https://github.com/kazuho/picojson.git
