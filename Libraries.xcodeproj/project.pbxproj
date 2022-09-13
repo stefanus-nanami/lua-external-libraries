@@ -71,6 +71,7 @@
 		C7E63A4E28CCF9D100E42096 /* libLua.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C7E639B328CCCDE300E42096 /* libLua.a */; };
 		C7E63A6028CCFF5800E42096 /* libLua.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C7E639B328CCCDE300E42096 /* libLua.a */; };
 		C7E63A6828CCFFC100E42096 /* lua.c in Sources */ = {isa = PBXBuildFile; fileRef = C7E63A6728CCFFC100E42096 /* lua.c */; };
+		C7E63AB128D0EB0A00E42096 /* LuaBridge.h in Headers */ = {isa = PBXBuildFile; fileRef = C7E63AB028D0EAF600E42096 /* LuaBridge.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -159,6 +160,8 @@
 		C7E63A4A28CCF9A200E42096 /* luac.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = luac.c; path = lua/src/luac.c; sourceTree = "<group>"; };
 		C7E63A6428CCFF5800E42096 /* lua */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = lua; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7E63A6728CCFFC100E42096 /* lua.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lua.c; path = lua/src/lua.c; sourceTree = "<group>"; };
+		C7E63AAE28D0E84900E42096 /* libLuaBridge.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLuaBridge.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7E63AB028D0EAF600E42096 /* LuaBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LuaBridge.h; path = LuaBridge3/Distribution/LuaBridge/LuaBridge.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,6 +196,7 @@
 			children = (
 				C7E63A3828CCD00000E42096 /* Configurations */,
 				C7E63A6928CD01C500E42096 /* Lua */,
+				C7E63A6A28D0E7FA00E42096 /* LuaBridge */,
 				C7E639B428CCCDE300E42096 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -203,6 +207,7 @@
 				C7E639B328CCCDE300E42096 /* libLua.a */,
 				C7E63A4028CCF86B00E42096 /* luac */,
 				C7E63A6428CCFF5800E42096 /* lua */,
+				C7E63AAE28D0E84900E42096 /* libLuaBridge.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -310,6 +315,14 @@
 			name = Lua;
 			sourceTree = "<group>";
 		};
+		C7E63A6A28D0E7FA00E42096 /* LuaBridge */ = {
+			isa = PBXGroup;
+			children = (
+				C7E63AB028D0EAF600E42096 /* LuaBridge.h */,
+			);
+			name = LuaBridge;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -345,6 +358,14 @@
 				C7E63A2328CCCED000E42096 /* lstate.h in Headers */,
 				C7E63A2128CCCED000E42096 /* lobject.h in Headers */,
 				C7E63A1928CCCED000E42096 /* lzio.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7E63AAF28D0EAC100E42096 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7E63AB128D0EB0A00E42096 /* LuaBridge.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,6 +423,21 @@
 			productReference = C7E63A6428CCFF5800E42096 /* lua */;
 			productType = "com.apple.product-type.tool";
 		};
+		C7E63A6B28D0E84900E42096 /* LuaBridge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C7E63AAB28D0E84900E42096 /* Build configuration list for PBXNativeTarget "LuaBridge" */;
+			buildPhases = (
+				C7E63AAF28D0EAC100E42096 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LuaBridge;
+			productName = Lua;
+			productReference = C7E63AAE28D0E84900E42096 /* libLuaBridge.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -435,6 +471,7 @@
 				C7E639B228CCCDE300E42096 /* Lua */,
 				C7E63A3F28CCF86B00E42096 /* luac */,
 				C7E63A5A28CCFF5800E42096 /* lua */,
+				C7E63A6B28D0E84900E42096 /* LuaBridge */,
 			);
 		};
 /* End PBXProject section */
@@ -591,6 +628,28 @@
 			};
 			name = Release;
 		};
+		C7E63AAC28D0E84900E42096 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INSTALL_PATH = "$(LIBRARY_INSTALLATION_PATH)";
+				LUA_FLAGS = "LUA_COMPAT_5_3 LUA_USE_MACOSX LUA_USE_READLINE";
+				PRIVATE_HEADERS_FOLDER_PATH = "$(HEADER_DESTINATION)/$(TARGET_NAME)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(HEADER_DESTINATION)/$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C7E63AAD28D0E84900E42096 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INSTALL_PATH = "$(LIBRARY_INSTALLATION_PATH)";
+				LUA_FLAGS = "LUA_COMPAT_5_3 LUA_USE_MACOSX LUA_USE_READLINE";
+				PRIVATE_HEADERS_FOLDER_PATH = "$(HEADER_DESTINATION)/$(TARGET_NAME)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(HEADER_DESTINATION)/$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -626,6 +685,15 @@
 			buildConfigurations = (
 				C7E63A6228CCFF5800E42096 /* Debug */,
 				C7E63A6328CCFF5800E42096 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C7E63AAB28D0E84900E42096 /* Build configuration list for PBXNativeTarget "LuaBridge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7E63AAC28D0E84900E42096 /* Debug */,
+				C7E63AAD28D0E84900E42096 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
