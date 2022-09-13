@@ -4,3 +4,6 @@
 [submodule "picojson"]
 	path = picojson
 	url = https://github.com/kazuho/picojson.git
+[submodule "LRDB"]
+	path = LRDB
+	url = https://github.com/satoren/LRDB.git

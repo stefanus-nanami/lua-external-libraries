@@ -73,6 +73,14 @@
 		C7E63A6828CCFFC100E42096 /* lua.c in Sources */ = {isa = PBXBuildFile; fileRef = C7E63A6728CCFFC100E42096 /* lua.c */; };
 		C7E63AB128D0EB0A00E42096 /* LuaBridge.h in Headers */ = {isa = PBXBuildFile; fileRef = C7E63AB028D0EAF600E42096 /* LuaBridge.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C7E63AC028D0F48E00E42096 /* picojson.h in Headers */ = {isa = PBXBuildFile; fileRef = C7E63ABA28D0F41100E42096 /* picojson.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C7E63AD128D0F92C00E42096 /* client.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C7E63ACB28D0F92C00E42096 /* client.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		C7E63AD228D0F92C00E42096 /* message.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C7E63ACC28D0F92C00E42096 /* message.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		C7E63AD328D0F92C00E42096 /* server.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C7E63ACD28D0F92C00E42096 /* server.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		C7E63AD428D0F92C00E42096 /* basic_server.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C7E63ACE28D0F92C00E42096 /* basic_server.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		C7E63AD528D0F92C00E42096 /* optional.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C7E63ACF28D0F92C00E42096 /* optional.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		C7E63AD628D0F92C00E42096 /* debugger.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C7E63AD028D0F92C00E42096 /* debugger.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		C7E63AD928D0F9B700E42096 /* stdstream.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C7E63AD728D0F9B700E42096 /* stdstream.hpp */; settings = {ATTRIBUTES = (Private, ); }; };
+		C7E63ADA28D0F9B700E42096 /* socket.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C7E63AD828D0F9B700E42096 /* socket.hpp */; settings = {ATTRIBUTES = (Private, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -165,6 +173,15 @@
 		C7E63AB028D0EAF600E42096 /* LuaBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LuaBridge.h; path = LuaBridge3/Distribution/LuaBridge/LuaBridge.h; sourceTree = "<group>"; };
 		C7E63AB828D0F3B700E42096 /* libpicojson.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libpicojson.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7E63ABA28D0F41100E42096 /* picojson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = picojson.h; path = picojson/picojson.h; sourceTree = "<group>"; };
+		C7E63AC728D0F8E800E42096 /* libLRDB.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLRDB.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7E63ACB28D0F92C00E42096 /* client.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = client.hpp; path = LRDB/include/lrdb/client.hpp; sourceTree = "<group>"; };
+		C7E63ACC28D0F92C00E42096 /* message.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = message.hpp; path = LRDB/include/lrdb/message.hpp; sourceTree = "<group>"; };
+		C7E63ACD28D0F92C00E42096 /* server.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = server.hpp; path = LRDB/include/lrdb/server.hpp; sourceTree = "<group>"; };
+		C7E63ACE28D0F92C00E42096 /* basic_server.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = basic_server.hpp; path = LRDB/include/lrdb/basic_server.hpp; sourceTree = "<group>"; };
+		C7E63ACF28D0F92C00E42096 /* optional.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = optional.hpp; path = LRDB/include/lrdb/optional.hpp; sourceTree = "<group>"; };
+		C7E63AD028D0F92C00E42096 /* debugger.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = debugger.hpp; path = LRDB/include/lrdb/debugger.hpp; sourceTree = "<group>"; };
+		C7E63AD728D0F9B700E42096 /* stdstream.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = stdstream.hpp; path = LRDB/include/lrdb/command_stream/stdstream.hpp; sourceTree = "<group>"; };
+		C7E63AD828D0F9B700E42096 /* socket.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = socket.hpp; path = LRDB/include/lrdb/command_stream/socket.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -198,6 +215,7 @@
 			isa = PBXGroup;
 			children = (
 				C7E63A3828CCD00000E42096 /* Configurations */,
+				C7E63AC928D0F90300E42096 /* LRDB */,
 				C7E63A6928CD01C500E42096 /* Lua */,
 				C7E63A6A28D0E7FA00E42096 /* LuaBridge */,
 				C7E63AB928D0F3E400E42096 /* picojson */,
@@ -213,6 +231,7 @@
 				C7E63A6428CCFF5800E42096 /* lua */,
 				C7E63AAE28D0E84900E42096 /* libLuaBridge.a */,
 				C7E63AB828D0F3B700E42096 /* libpicojson.a */,
+				C7E63AC728D0F8E800E42096 /* libLRDB.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -336,6 +355,21 @@
 			name = picojson;
 			sourceTree = "<group>";
 		};
+		C7E63AC928D0F90300E42096 /* LRDB */ = {
+			isa = PBXGroup;
+			children = (
+				C7E63AD828D0F9B700E42096 /* socket.hpp */,
+				C7E63AD728D0F9B700E42096 /* stdstream.hpp */,
+				C7E63ACE28D0F92C00E42096 /* basic_server.hpp */,
+				C7E63ACB28D0F92C00E42096 /* client.hpp */,
+				C7E63AD028D0F92C00E42096 /* debugger.hpp */,
+				C7E63ACC28D0F92C00E42096 /* message.hpp */,
+				C7E63ACF28D0F92C00E42096 /* optional.hpp */,
+				C7E63ACD28D0F92C00E42096 /* server.hpp */,
+			);
+			name = LRDB;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -387,6 +421,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				C7E63AC028D0F48E00E42096 /* picojson.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7E63AC828D0F8F900E42096 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7E63AD228D0F92C00E42096 /* message.hpp in Headers */,
+				C7E63AD328D0F92C00E42096 /* server.hpp in Headers */,
+				C7E63AD428D0F92C00E42096 /* basic_server.hpp in Headers */,
+				C7E63AD528D0F92C00E42096 /* optional.hpp in Headers */,
+				C7E63AD128D0F92C00E42096 /* client.hpp in Headers */,
+				C7E63ADA28D0F9B700E42096 /* socket.hpp in Headers */,
+				C7E63AD928D0F9B700E42096 /* stdstream.hpp in Headers */,
+				C7E63AD628D0F92C00E42096 /* debugger.hpp in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -474,6 +523,21 @@
 			productReference = C7E63AB828D0F3B700E42096 /* libpicojson.a */;
 			productType = "com.apple.product-type.library.static";
 		};
+		C7E63AC128D0F8E800E42096 /* LRDB */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C7E63AC428D0F8E800E42096 /* Build configuration list for PBXNativeTarget "LRDB" */;
+			buildPhases = (
+				C7E63AC828D0F8F900E42096 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LRDB;
+			productName = Lua;
+			productReference = C7E63AC728D0F8E800E42096 /* libLRDB.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -509,6 +573,7 @@
 				C7E63A5A28CCFF5800E42096 /* lua */,
 				C7E63A6B28D0E84900E42096 /* LuaBridge */,
 				C7E63AB228D0F3B700E42096 /* picojson */,
+				C7E63AC128D0F8E800E42096 /* LRDB */,
 			);
 		};
 /* End PBXProject section */
@@ -709,6 +774,28 @@
 			};
 			name = Release;
 		};
+		C7E63AC528D0F8E800E42096 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INSTALL_PATH = "$(LIBRARY_INSTALLATION_PATH)";
+				LUA_FLAGS = "LUA_COMPAT_5_3 LUA_USE_MACOSX LUA_USE_READLINE";
+				PRIVATE_HEADERS_FOLDER_PATH = "$(HEADER_DESTINATION)/$(TARGET_NAME)/command_stream";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(HEADER_DESTINATION)/$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C7E63AC628D0F8E800E42096 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INSTALL_PATH = "$(LIBRARY_INSTALLATION_PATH)";
+				LUA_FLAGS = "LUA_COMPAT_5_3 LUA_USE_MACOSX LUA_USE_READLINE";
+				PRIVATE_HEADERS_FOLDER_PATH = "$(HEADER_DESTINATION)/$(TARGET_NAME)/command_stream";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(HEADER_DESTINATION)/$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -762,6 +849,15 @@
 			buildConfigurations = (
 				C7E63AB628D0F3B700E42096 /* Debug */,
 				C7E63AB728D0F3B700E42096 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C7E63AC428D0F8E800E42096 /* Build configuration list for PBXNativeTarget "LRDB" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7E63AC528D0F8E800E42096 /* Debug */,
+				C7E63AC628D0F8E800E42096 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
