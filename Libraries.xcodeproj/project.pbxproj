@@ -654,7 +654,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C7E63A3A28CCD02800E42096 /* Libraries.Debug.xcconfig */;
 			buildSettings = {
-				EXECUTABLE_INSTALLATION_PATH = "bin/$(CONFIGURATION)";
+				EXECUTABLE_INSTALLATION_PATH = bin;
 				LIBRARY_INSTALLATION_PATH = "lib/$(CONFIGURATION)";
 			};
 			name = Debug;
@@ -663,7 +663,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C7E63A3928CCD02800E42096 /* Libraries.Release.xcconfig */;
 			buildSettings = {
-				EXECUTABLE_INSTALLATION_PATH = "bin/$(CONFIGURATION)";
+				EXECUTABLE_INSTALLATION_PATH = bin;
 				LIBRARY_INSTALLATION_PATH = "lib/$(CONFIGURATION)";
 			};
 			name = Release;
