@@ -7,6 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C700B87128D222BB0070CE55 /* asio in Headers */ = {isa = PBXBuildFile; fileRef = C700B86E28D222A30070CE55 /* asio */; settings = {ATTRIBUTES = (Public, ); }; };
+		C700B87228D222BB0070CE55 /* asio.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C700B86F28D222A30070CE55 /* asio.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		C700B87C28D223860070CE55 /* basic_server.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C700B87528D223860070CE55 /* basic_server.hpp */; };
+		C700B87D28D223860070CE55 /* client.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C700B87628D223860070CE55 /* client.hpp */; };
+		C700B87E28D223860070CE55 /* optional.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C700B87728D223860070CE55 /* optional.hpp */; };
+		C700B87F28D223860070CE55 /* debugger.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C700B87828D223860070CE55 /* debugger.hpp */; };
+		C700B88028D223860070CE55 /* server.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C700B87928D223860070CE55 /* server.hpp */; };
+		C700B88128D223860070CE55 /* message.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C700B87B28D223860070CE55 /* message.hpp */; };
+		C700B88228D223930070CE55 /* basic_server.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C700B87528D223860070CE55 /* basic_server.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		C700B88328D223930070CE55 /* client.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C700B87628D223860070CE55 /* client.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		C700B88428D223930070CE55 /* command_stream in Headers */ = {isa = PBXBuildFile; fileRef = C700B87A28D223860070CE55 /* command_stream */; settings = {ATTRIBUTES = (Public, ); }; };
+		C700B88528D223930070CE55 /* debugger.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C700B87828D223860070CE55 /* debugger.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		C700B88628D223930070CE55 /* message.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C700B87B28D223860070CE55 /* message.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		C700B88728D223930070CE55 /* optional.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C700B87728D223860070CE55 /* optional.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		C700B88828D223930070CE55 /* server.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C700B87928D223860070CE55 /* server.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
 		C7E639F728CCCED000E42096 /* lctype.h in Headers */ = {isa = PBXBuildFile; fileRef = C7E639B928CCCECF00E42096 /* lctype.h */; };
 		C7E639F828CCCED000E42096 /* lstring.c in Sources */ = {isa = PBXBuildFile; fileRef = C7E639BA28CCCECF00E42096 /* lstring.c */; };
 		C7E639F928CCCED000E42096 /* ldump.c in Sources */ = {isa = PBXBuildFile; fileRef = C7E639BB28CCCECF00E42096 /* ldump.c */; };
@@ -73,14 +88,6 @@
 		C7E63A6828CCFFC100E42096 /* lua.c in Sources */ = {isa = PBXBuildFile; fileRef = C7E63A6728CCFFC100E42096 /* lua.c */; };
 		C7E63AB128D0EB0A00E42096 /* LuaBridge.h in Headers */ = {isa = PBXBuildFile; fileRef = C7E63AB028D0EAF600E42096 /* LuaBridge.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C7E63AC028D0F48E00E42096 /* picojson.h in Headers */ = {isa = PBXBuildFile; fileRef = C7E63ABA28D0F41100E42096 /* picojson.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C7E63AD128D0F92C00E42096 /* client.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C7E63ACB28D0F92C00E42096 /* client.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
-		C7E63AD228D0F92C00E42096 /* message.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C7E63ACC28D0F92C00E42096 /* message.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
-		C7E63AD328D0F92C00E42096 /* server.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C7E63ACD28D0F92C00E42096 /* server.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
-		C7E63AD428D0F92C00E42096 /* basic_server.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C7E63ACE28D0F92C00E42096 /* basic_server.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
-		C7E63AD528D0F92C00E42096 /* optional.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C7E63ACF28D0F92C00E42096 /* optional.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
-		C7E63AD628D0F92C00E42096 /* debugger.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C7E63AD028D0F92C00E42096 /* debugger.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
-		C7E63AD928D0F9B700E42096 /* stdstream.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C7E63AD728D0F9B700E42096 /* stdstream.hpp */; settings = {ATTRIBUTES = (Private, ); }; };
-		C7E63ADA28D0F9B700E42096 /* socket.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C7E63AD828D0F9B700E42096 /* socket.hpp */; settings = {ATTRIBUTES = (Private, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +108,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C700B86D28D221B80070CE55 /* libasio.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libasio.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C700B86E28D222A30070CE55 /* asio */ = {isa = PBXFileReference; lastKnownFileType = folder; name = asio; path = asio/asio/include/asio; sourceTree = "<group>"; };
+		C700B86F28D222A30070CE55 /* asio.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = asio.hpp; path = asio/asio/include/asio.hpp; sourceTree = "<group>"; };
+		C700B87528D223860070CE55 /* basic_server.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = basic_server.hpp; path = LRDB/include/lrdb/basic_server.hpp; sourceTree = "<group>"; };
+		C700B87628D223860070CE55 /* client.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = client.hpp; path = LRDB/include/lrdb/client.hpp; sourceTree = "<group>"; };
+		C700B87728D223860070CE55 /* optional.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = optional.hpp; path = LRDB/include/lrdb/optional.hpp; sourceTree = "<group>"; };
+		C700B87828D223860070CE55 /* debugger.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = debugger.hpp; path = LRDB/include/lrdb/debugger.hpp; sourceTree = "<group>"; };
+		C700B87928D223860070CE55 /* server.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = server.hpp; path = LRDB/include/lrdb/server.hpp; sourceTree = "<group>"; };
+		C700B87A28D223860070CE55 /* command_stream */ = {isa = PBXFileReference; lastKnownFileType = folder; name = command_stream; path = LRDB/include/lrdb/command_stream; sourceTree = "<group>"; };
+		C700B87B28D223860070CE55 /* message.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = message.hpp; path = LRDB/include/lrdb/message.hpp; sourceTree = "<group>"; };
 		C7E639B328CCCDE300E42096 /* libLua.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLua.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7E639B928CCCECF00E42096 /* lctype.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lctype.h; path = lua/src/lctype.h; sourceTree = "<group>"; };
 		C7E639BA28CCCECF00E42096 /* lstring.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lstring.c; path = lua/src/lstring.c; sourceTree = "<group>"; };
@@ -174,14 +191,6 @@
 		C7E63AB828D0F3B700E42096 /* libpicojson.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libpicojson.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7E63ABA28D0F41100E42096 /* picojson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = picojson.h; path = picojson/picojson.h; sourceTree = "<group>"; };
 		C7E63AC728D0F8E800E42096 /* libLRDB.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLRDB.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		C7E63ACB28D0F92C00E42096 /* client.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = client.hpp; path = LRDB/include/lrdb/client.hpp; sourceTree = "<group>"; };
-		C7E63ACC28D0F92C00E42096 /* message.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = message.hpp; path = LRDB/include/lrdb/message.hpp; sourceTree = "<group>"; };
-		C7E63ACD28D0F92C00E42096 /* server.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = server.hpp; path = LRDB/include/lrdb/server.hpp; sourceTree = "<group>"; };
-		C7E63ACE28D0F92C00E42096 /* basic_server.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = basic_server.hpp; path = LRDB/include/lrdb/basic_server.hpp; sourceTree = "<group>"; };
-		C7E63ACF28D0F92C00E42096 /* optional.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = optional.hpp; path = LRDB/include/lrdb/optional.hpp; sourceTree = "<group>"; };
-		C7E63AD028D0F92C00E42096 /* debugger.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = debugger.hpp; path = LRDB/include/lrdb/debugger.hpp; sourceTree = "<group>"; };
-		C7E63AD728D0F9B700E42096 /* stdstream.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = stdstream.hpp; path = LRDB/include/lrdb/command_stream/stdstream.hpp; sourceTree = "<group>"; };
-		C7E63AD828D0F9B700E42096 /* socket.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = socket.hpp; path = LRDB/include/lrdb/command_stream/socket.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -211,9 +220,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C700B85F28D221940070CE55 /* asio */ = {
+			isa = PBXGroup;
+			children = (
+				C700B86E28D222A30070CE55 /* asio */,
+				C700B86F28D222A30070CE55 /* asio.hpp */,
+			);
+			name = asio;
+			sourceTree = "<group>";
+		};
 		C7E639A828CCCDA700E42096 = {
 			isa = PBXGroup;
 			children = (
+				C700B85F28D221940070CE55 /* asio */,
 				C7E63A3828CCD00000E42096 /* Configurations */,
 				C7E63AC928D0F90300E42096 /* LRDB */,
 				C7E63A6928CD01C500E42096 /* Lua */,
@@ -232,6 +251,7 @@
 				C7E63AAE28D0E84900E42096 /* libLuaBridge.a */,
 				C7E63AB828D0F3B700E42096 /* libpicojson.a */,
 				C7E63AC728D0F8E800E42096 /* libLRDB.a */,
+				C700B86D28D221B80070CE55 /* libasio.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -358,14 +378,13 @@
 		C7E63AC928D0F90300E42096 /* LRDB */ = {
 			isa = PBXGroup;
 			children = (
-				C7E63AD828D0F9B700E42096 /* socket.hpp */,
-				C7E63AD728D0F9B700E42096 /* stdstream.hpp */,
-				C7E63ACE28D0F92C00E42096 /* basic_server.hpp */,
-				C7E63ACB28D0F92C00E42096 /* client.hpp */,
-				C7E63AD028D0F92C00E42096 /* debugger.hpp */,
-				C7E63ACC28D0F92C00E42096 /* message.hpp */,
-				C7E63ACF28D0F92C00E42096 /* optional.hpp */,
-				C7E63ACD28D0F92C00E42096 /* server.hpp */,
+				C700B87528D223860070CE55 /* basic_server.hpp */,
+				C700B87628D223860070CE55 /* client.hpp */,
+				C700B87A28D223860070CE55 /* command_stream */,
+				C700B87828D223860070CE55 /* debugger.hpp */,
+				C700B87B28D223860070CE55 /* message.hpp */,
+				C700B87728D223860070CE55 /* optional.hpp */,
+				C700B87928D223860070CE55 /* server.hpp */,
 			);
 			name = LRDB;
 			sourceTree = "<group>";
@@ -373,6 +392,35 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		C700B87028D222B20070CE55 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C700B87C28D223860070CE55 /* basic_server.hpp in Headers */,
+				C700B87128D222BB0070CE55 /* asio in Headers */,
+				C700B88028D223860070CE55 /* server.hpp in Headers */,
+				C700B87228D222BB0070CE55 /* asio.hpp in Headers */,
+				C700B87E28D223860070CE55 /* optional.hpp in Headers */,
+				C700B87D28D223860070CE55 /* client.hpp in Headers */,
+				C700B88128D223860070CE55 /* message.hpp in Headers */,
+				C700B87F28D223860070CE55 /* debugger.hpp in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C700B87428D2235B0070CE55 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C700B88228D223930070CE55 /* basic_server.hpp in Headers */,
+				C700B88328D223930070CE55 /* client.hpp in Headers */,
+				C700B88428D223930070CE55 /* command_stream in Headers */,
+				C700B88528D223930070CE55 /* debugger.hpp in Headers */,
+				C700B88628D223930070CE55 /* message.hpp in Headers */,
+				C700B88728D223930070CE55 /* optional.hpp in Headers */,
+				C700B88828D223930070CE55 /* server.hpp in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C7E639AF28CCCDE300E42096 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -424,24 +472,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C7E63AC828D0F8F900E42096 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C7E63AD228D0F92C00E42096 /* message.hpp in Headers */,
-				C7E63AD328D0F92C00E42096 /* server.hpp in Headers */,
-				C7E63AD428D0F92C00E42096 /* basic_server.hpp in Headers */,
-				C7E63AD528D0F92C00E42096 /* optional.hpp in Headers */,
-				C7E63AD128D0F92C00E42096 /* client.hpp in Headers */,
-				C7E63ADA28D0F9B700E42096 /* socket.hpp in Headers */,
-				C7E63AD928D0F9B700E42096 /* stdstream.hpp in Headers */,
-				C7E63AD628D0F92C00E42096 /* debugger.hpp in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		C700B86028D221B80070CE55 /* asio */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C700B86A28D221B80070CE55 /* Build configuration list for PBXNativeTarget "asio" */;
+			buildPhases = (
+				C700B87028D222B20070CE55 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = asio;
+			productName = Lua;
+			productReference = C700B86D28D221B80070CE55 /* libasio.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 		C7E639B228CCCDE300E42096 /* Lua */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C7E639B528CCCDE300E42096 /* Build configuration list for PBXNativeTarget "Lua" */;
@@ -527,7 +575,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C7E63AC428D0F8E800E42096 /* Build configuration list for PBXNativeTarget "LRDB" */;
 			buildPhases = (
-				C7E63AC828D0F8F900E42096 /* Headers */,
+				C700B87428D2235B0070CE55 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -574,6 +622,7 @@
 				C7E63A6B28D0E84900E42096 /* LuaBridge */,
 				C7E63AB228D0F3B700E42096 /* picojson */,
 				C7E63AC128D0F8E800E42096 /* LRDB */,
+				C700B86028D221B80070CE55 /* asio */,
 			);
 		};
 /* End PBXProject section */
@@ -650,6 +699,28 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		C700B86B28D221B80070CE55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INSTALL_PATH = "$(LIBRARY_INSTALLATION_PATH)";
+				LUA_FLAGS = "LUA_COMPAT_5_3 LUA_USE_MACOSX LUA_USE_READLINE";
+				PRIVATE_HEADERS_FOLDER_PATH = "$(HEADER_DESTINATION)/$(TARGET_NAME)/command_stream";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(HEADER_DESTINATION)/$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C700B86C28D221B80070CE55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INSTALL_PATH = "$(LIBRARY_INSTALLATION_PATH)";
+				LUA_FLAGS = "LUA_COMPAT_5_3 LUA_USE_MACOSX LUA_USE_READLINE";
+				PRIVATE_HEADERS_FOLDER_PATH = "$(HEADER_DESTINATION)/$(TARGET_NAME)/command_stream";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(HEADER_DESTINATION)/$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		C7E639AD28CCCDA700E42096 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C7E63A3A28CCD02800E42096 /* Libraries.Debug.xcconfig */;
@@ -799,6 +870,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		C700B86A28D221B80070CE55 /* Build configuration list for PBXNativeTarget "asio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C700B86B28D221B80070CE55 /* Debug */,
+				C700B86C28D221B80070CE55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		C7E639AC28CCCDA700E42096 /* Build configuration list for PBXProject "Libraries" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

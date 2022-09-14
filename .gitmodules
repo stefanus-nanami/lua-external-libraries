@@ -7,3 +7,6 @@
 [submodule "LRDB"]
 	path = LRDB
 	url = https://github.com/satoren/LRDB.git
+[submodule "asio"]
+	path = asio
+	url = https://github.com/chriskohlhoff/asio.git
