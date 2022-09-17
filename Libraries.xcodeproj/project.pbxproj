@@ -190,7 +190,7 @@
 		C7E63AB028D0EAF600E42096 /* LuaBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LuaBridge.h; path = LuaBridge3/Distribution/LuaBridge/LuaBridge.h; sourceTree = "<group>"; };
 		C7E63AB828D0F3B700E42096 /* libpicojson.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libpicojson.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7E63ABA28D0F41100E42096 /* picojson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = picojson.h; path = picojson/picojson.h; sourceTree = "<group>"; };
-		C7E63AC728D0F8E800E42096 /* libLRDB.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLRDB.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7E63AC728D0F8E800E42096 /* liblrdb.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = liblrdb.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -250,7 +250,7 @@
 				C7E63A6428CCFF5800E42096 /* lua */,
 				C7E63AAE28D0E84900E42096 /* libLuaBridge.a */,
 				C7E63AB828D0F3B700E42096 /* libpicojson.a */,
-				C7E63AC728D0F8E800E42096 /* libLRDB.a */,
+				C7E63AC728D0F8E800E42096 /* liblrdb.a */,
 				C700B86D28D221B80070CE55 /* libasio.a */,
 			);
 			name = Products;
@@ -571,9 +571,9 @@
 			productReference = C7E63AB828D0F3B700E42096 /* libpicojson.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		C7E63AC128D0F8E800E42096 /* LRDB */ = {
+		C7E63AC128D0F8E800E42096 /* lrdb */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C7E63AC428D0F8E800E42096 /* Build configuration list for PBXNativeTarget "LRDB" */;
+			buildConfigurationList = C7E63AC428D0F8E800E42096 /* Build configuration list for PBXNativeTarget "lrdb" */;
 			buildPhases = (
 				C700B87428D2235B0070CE55 /* Headers */,
 			);
@@ -581,9 +581,9 @@
 			);
 			dependencies = (
 			);
-			name = LRDB;
+			name = lrdb;
 			productName = Lua;
-			productReference = C7E63AC728D0F8E800E42096 /* libLRDB.a */;
+			productReference = C7E63AC728D0F8E800E42096 /* liblrdb.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -593,7 +593,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastUpgradeCheck = 1340;
+				LastUpgradeCheck = 1400;
 				TargetAttributes = {
 					C7E639B228CCCDE300E42096 = {
 						CreatedOnToolsVersion = 13.4.1;
@@ -621,7 +621,7 @@
 				C7E63A5A28CCFF5800E42096 /* lua */,
 				C7E63A6B28D0E84900E42096 /* LuaBridge */,
 				C7E63AB228D0F3B700E42096 /* picojson */,
-				C7E63AC128D0F8E800E42096 /* LRDB */,
+				C7E63AC128D0F8E800E42096 /* lrdb */,
 				C700B86028D221B80070CE55 /* asio */,
 			);
 		};
@@ -933,7 +933,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C7E63AC428D0F8E800E42096 /* Build configuration list for PBXNativeTarget "LRDB" */ = {
+		C7E63AC428D0F8E800E42096 /* Build configuration list for PBXNativeTarget "lrdb" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C7E63AC528D0F8E800E42096 /* Debug */,

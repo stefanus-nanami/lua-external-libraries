@@ -57,8 +57,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "C7E63AC128D0F8E800E42096"
-               BuildableName = "libLRDB.a"
-               BlueprintName = "LRDB"
+               BuildableName = "liblrdb.a"
+               BlueprintName = "lrdb"
                ReferencedContainer = "container:Libraries.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
